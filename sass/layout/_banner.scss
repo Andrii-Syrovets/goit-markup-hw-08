@@ -4,15 +4,15 @@
     padding: 200px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)), 
-    url(/pictures/banner/mobile-bg.png);
+    url(/pictures/banner/mobile-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    // max-width: 1600px;
+    max-width: 1600px;
 }
 
 .banner-title {
-    // font-weight: 900;
-    // font-size: 44px;
+    font-weight: 900;
+    font-size: 44px;
     line-height: 1.37;
     text-align: center;
     letter-spacing: 0.06em;
