@@ -1,22 +1,122 @@
 .banner {
-    background: var(--banner-footer-background);
-    flex-grow: 1;
-    padding: 200px 0;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)), 
-    url(/pictures/banner/mobile-bg.jpg);
+    // background: var(--banner-footer-background);
+    // flex-grow: 1;
+    // padding: 200px 0;
+    // background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    // rgba(47, 48, 58, 0.4)), 
+    // url(/pictures/banner/mobile-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 1600px;
+    // max-width: 1600px;
+        margin: 0 auto;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../pictures/banner/mobile-bg.jpg);
+    
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                    url(../pictures/banner/mobile-bg@2x.jpg);
+                }
+    
+        @media  screen and (min-width: 480px) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../pictures/banner/mobile-bg.jpg);
+            // background-size: 480px 400px;
+        }
+    
+        @media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
+        screen and (min-resolution: 192dpi) and (min-width: 480px),
+        screen and (min-resolution: 2dppx) and (min-width: 480px) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                    url(../pictures/banner/mobile-bg@2x.jpg);
+        }
+    
+        @media  screen and (min-width: 768px) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../pictures/banner/tablet-bg.jpg);
+            // background-size: 768px 400px;
+        }
+    
+        @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+        screen and (min-resolution: 192dpi) and (min-width: 768px),
+        screen and (min-resolution: 2dppx) and (min-width: 768px)  {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                    url(../pictures/banner/tablet-bg@2x.jpg);
+                }
+        
+        @media  screen and (min-width: 1200px) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../pictures/banner/laptop-bg.jpg);
+            // background-size: 1600px 600px;
+        }
+    
+        @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+        screen and (min-resolution: 192dpi) and (min-width: 1200px),
+        screen and (min-resolution: 2dppx) and (min-width: 1200px)  {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                    url(../pictures/banner/laptop-bg@2x.jpg);
+                }
+    
 }
 
 .banner-title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.37;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color:var(--third-text-color);
+    @media screen and (max-width: 767px) {
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.62;
+        letter-spacing: 0.06em;
+        text-align: center;
+        text-transform: uppercase;
+        color:var(--third-text-color);
+        margin-bottom: 30px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.62;
+        letter-spacing: 0.06em;
+            text-align: center;
+        text-transform: uppercase;
+        color:var(--third-text-color);
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.37;
+        letter-spacing: 0.06em;
+        }
+
 }
+
+.banner-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 118px 30px;
+    
+    @media screen and (min-width: 768px) {
+            padding: 118px 204px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+            padding: 200px 252px;
+    }
+}
+
 
