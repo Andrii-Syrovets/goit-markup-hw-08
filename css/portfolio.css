@@ -450,7 +450,7 @@ img {
 }
 
 .portfolio {
-  padding: 94px 0;
+  padding: 60px 0;
 }
 
 .gallery-list {
@@ -545,6 +545,9 @@ img {
 @media screen and (min-width: 1200px) {
   .gallery-list-item {
     max-width: 370px;
+  }
+  .portfolio {
+    padding: 94px 0;
   }
 }
 
