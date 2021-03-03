@@ -6,12 +6,13 @@
 
 .gallery-list {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     flex-wrap: wrap;
+    // margin: -15px;
 }
 
 .gallery-list-item {
-    width: 370px;
+    width: 100%;
     background: var(--third-text-color);
     box-sizing: border-box;
     align-content: flex-start;
@@ -83,5 +84,20 @@
 .gallery-list-link:focus &,
 .gallery-list-link:hover & {
     transform: translateY(0);
+    }
+    }
+
+    @media screen and (min-width: 748px) {
+        .gallery-list-item {
+            max-width: 354px;
+    }
+    .gallery-list {
+        justify-content: space-between;
+    }    
+    }
+    
+    @media screen and (min-width: 1200px) {
+        .gallery-list-item {
+            max-width: 370px;
     }
     }
