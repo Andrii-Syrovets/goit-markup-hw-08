@@ -69,7 +69,14 @@
     }
     .team-list-item {
         width: 270px;
+        &:nth-child(n+1){
+            margin-bottom: 0;
+            }
+        }
+    .team {
+        padding: 94px 0;
     }
+    
 }
 
 

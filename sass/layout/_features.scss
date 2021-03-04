@@ -45,6 +45,12 @@ flex-direction: column;
     width: 70px;
 }
 
+@media screen and (max-width: 767px) {
+.features-list-title {
+    text-align: center;
+}
+}
+
 @media screen and (min-width: 768px) {
 
     .features-list{
@@ -57,6 +63,18 @@ flex-direction: column;
         width: 354px;
         }
     }
+
+@media screen and (max-width: 1199px) {
+
+.features {
+    padding-bottom: 60px;
+}
+.features-list-item {
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+}
 
 @media screen and (min-width: 1200px) {
     .features {

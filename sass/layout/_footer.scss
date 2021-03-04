@@ -219,6 +219,7 @@
 .right {
    margin-left: 70px;
    align-items: start;
+   margin: 0;
 }
 .footer-form-mail {
    padding: 15px 16px;
@@ -228,6 +229,9 @@
    flex-direction: row;
 }
 .footer-list {
+   align-items: start;
+}
+.left {
    align-items: start;
 }
 }

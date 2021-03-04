@@ -75,7 +75,7 @@
         text-align: center;
         text-transform: uppercase;
         color:var(--third-text-color);
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
     }
     
     @media screen and (min-width: 768px) {
@@ -86,7 +86,7 @@
             text-align: center;
         text-transform: uppercase;
         color:var(--third-text-color);
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -94,6 +94,7 @@
         font-size: 44px;
         line-height: 1.37;
         letter-spacing: 0.06em;
+        margin-bottom: 0;
         }
 
 }

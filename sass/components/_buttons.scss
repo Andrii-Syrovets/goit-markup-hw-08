@@ -78,7 +78,6 @@
 }
 
 .button-list-item{
-    margin-bottom: 15px;
     &:not(:last-child) {
     margin-right: 8px;
 }
@@ -91,13 +90,22 @@ flex-wrap: wrap;
 margin-bottom: 10px;
 }
 
+@media screen and (max-width: 747px) {
+
+.button-list-item{
+    margin-bottom: 15px;
+}
+}
+
 @media screen and (min-width: 748px) {
     .button-list {
+    margin-bottom: 30px;
     justify-content: center;
-    margin-bottom: 0;
+
     }
 }
-@media screen and (min-width: 748px) {
+
+@media screen and (min-width: 1200px) {
     .button-list {
     margin-bottom: 20px;
     }

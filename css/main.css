@@ -229,10 +229,6 @@ img {
   background-color: var(--active-color);
 }
 
-.button-list-item {
-  margin-bottom: 15px;
-}
-
 .button-list-item:not(:last-child) {
   margin-right: 8px;
 }
@@ -244,14 +240,20 @@ img {
   margin-bottom: 10px;
 }
 
-@media screen and (min-width: 748px) {
-  .button-list {
-    justify-content: center;
-    margin-bottom: 0;
+@media screen and (max-width: 747px) {
+  .button-list-item {
+    margin-bottom: 15px;
   }
 }
 
 @media screen and (min-width: 748px) {
+  .button-list {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .button-list {
     margin-bottom: 20px;
   }
@@ -520,7 +522,6 @@ img {
     text-align: center;
     text-transform: uppercase;
     color: var(--third-text-color);
-    margin-bottom: 30px;
   }
 }
 
@@ -533,7 +534,6 @@ img {
     text-align: center;
     text-transform: uppercase;
     color: var(--third-text-color);
-    margin-bottom: 30px;
   }
 }
 
@@ -543,6 +543,7 @@ img {
     font-size: 44px;
     line-height: 1.37;
     letter-spacing: 0.06em;
+    margin-bottom: 0;
   }
 }
 
@@ -611,6 +612,12 @@ img {
   width: 70px;
 }
 
+@media screen and (max-width: 767px) {
+  .features-list-title {
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .features-list {
     display: flex;
@@ -620,6 +627,15 @@ img {
   }
   .features-list-item {
     width: 354px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .features {
+    padding-bottom: 60px;
+  }
+  .features-list-item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
@@ -757,6 +773,12 @@ img {
   }
   .team-list-item {
     width: 270px;
+  }
+  .team-list-item:nth-child(n+1) {
+    margin-bottom: 0;
+  }
+  .team {
+    padding: 94px 0;
   }
 }
 
@@ -1039,6 +1061,7 @@ img {
   .right {
     margin-left: 70px;
     align-items: start;
+    margin: 0;
   }
   .footer-form-mail {
     padding: 15px 16px;
@@ -1048,6 +1071,9 @@ img {
     flex-direction: row;
   }
   .footer-list {
+    align-items: start;
+  }
+  .left {
     align-items: start;
   }
 }
@@ -1278,7 +1304,6 @@ img {
   flex-direction: column;
   position: fixed;
   width: 100%;
-  max-width: 480px;
   height: 100vh;
   top: 0;
   left: 50%;
@@ -1296,6 +1321,11 @@ img {
   transform: translateX(-50%) translateY(0);
   visibility: visible;
   pointer-events: visible;
+}
+
+.mobile-menu .mobile-menu-container {
+  max-width: 480px;
+  height: 100vh;
 }
 
 @media screen and (min-width: 768px) {
